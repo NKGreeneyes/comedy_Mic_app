@@ -2,13 +2,31 @@ import React, { Component } from "react";
 // import API from "../../utils/API"; //import you API functions here
 import { Col, Row, Container } from "../../components/Grid";
 import Header from "../../components/header.js";
+import Axios from 'axios'
 
 class Home extends Component {
   state = {
-    example: "some state!"
+    email: "",
+    pass: ''
   };
 
+  handleUserName = (e) => {
+    this.setState({email: e.target.value})
+
+  }
+  
+  handlePass = (e) => {
+    this.setState({pass: e.target.value})
+  }
+
+  handleSave = () => {
+    console.log('this is what we are about to save!!!', this.state);
+    Axios.post('http://localhost:3001/save',this.state ).then(function(data){
+      console.log('we got this back', data)
+    })
+  }
   render() {
+    console.log('this is our state!!!!', this.state);
     return (
       <Container>
         <Row>
@@ -21,6 +39,13 @@ class Home extends Component {
               the grid components to help layout your pages, feel free!
             </h3>
 
+    <h1> tom test</h1>
+    
+      <p>Email</p>
+      <input onChange={this.handleUserName}></input>
+      <p>Pass</p>
+      <input onChange={this.handlePass}></input>
+      <button onClick={this.handleSave}>Save!!</button>
 
           </Col>
         </Row>
