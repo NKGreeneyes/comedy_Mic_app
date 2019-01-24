@@ -4,7 +4,7 @@ import Home from "./pages/Home";
 import NoMatch from "./pages/NoMatch";
 import Calendar from "./pages/Calendar";
 import HostHome from "./pages/HostHome";
-import ComedianHome from "./pages/ComedianHome"
+import ComedianHome from "./pages/ComedianHome";
 
 const App = () => (
   <Router>
