@@ -3,7 +3,7 @@ import React, { Component } from "react";
 import { Col, Row, Container } from "../../components/Grid";
 import Header from "../../components/header.js";
 
-class Home extends Component {
+class ComedianHome extends Component {
   state = {
     example: "some state!"
   };
@@ -13,15 +13,10 @@ class Home extends Component {
       <Container>
         <Row>
           <Col size="md-12">
-          <Header text={'hey gang this header works'}></Header>
-
-          <h1>hey this would be the home page</h1>
+          <Header text={'change the header for the calendar page'}></Header>
             <h3>
-              Hello there! You absolutely don't have to, put if you'd like use
-              the grid components to help layout your pages, feel free!
+              comedian home page
             </h3>
-
-
           </Col>
         </Row>
       </Container>
@@ -29,4 +24,4 @@ class Home extends Component {
   }
 }
 
-export default Home;
+export default ComedianHome;
