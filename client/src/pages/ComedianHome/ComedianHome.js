@@ -13,7 +13,7 @@ class ComedianHome extends Component {
       <Container>
         <Row>
           <Col size="md-12">
-          <Header text={'change the header for the calendar page'}></Header>
+          <Header text={'if we want it dynamic on comedian home we are set'}></Header>
             <h3>
               comedian home page
             </h3>
