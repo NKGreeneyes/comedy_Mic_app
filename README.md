@@ -25,6 +25,8 @@ https://docs.google.com/spreadsheets/d/1YOkOzib-vOOX_MlYoar5q3Srb0IiLFHs7uuEtA3j
 Technologies
 TBD
 
+Cited Sources
+https://github.com/intljusticemission/react-big-calendar
 
 Future Development
 Expansion to other cities 
@@ -36,6 +38,6 @@ Post videos
 Team Members
 Victoria
 Dan
-Reuben
+Ruben
 Nick
 Skinder
