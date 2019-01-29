@@ -14,7 +14,8 @@ class Header extends React.Component {
           <Link to='/'>Home</Link> <br></br>
           <Link to='/calendar'>calendar</Link><br></br>    
           <Link to="/hosthome">Host Home</Link><br></br>
-          <Link to='/comedianhome'>Comedian Home</Link>
+          <Link to='/comedianhome'>Comedian Home</Link><br></br>
+          <Link to='/EventForm'>Event Form</Link>
           
         <Login></Login>
 

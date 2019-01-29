@@ -3,13 +3,13 @@ const Schema = mongoose.Schema;
 
 //define and export a model like so:
 
-const tomSchema = new Schema(
+const hostSchema = new Schema(
   {
     email: { type: String },
     pass: { type: String }
   },
 );
 
-const Example = mongoose.model("Tom", tomSchema);
+const Comedian = mongoose.model("Host", hostSchema);
 
-module.exports = Example;
+module.exports = Comedian;

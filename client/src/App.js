@@ -5,6 +5,7 @@ import NoMatch from "./pages/NoMatch";
 import Calendar from "./pages/Calendar";
 import HostHome from "./pages/HostHome";
 import ComedianHome from "./pages/ComedianHome";
+import EventForm from "./pages/EventForm";
 
 const App = () => (
   <Router>
@@ -17,6 +18,8 @@ const App = () => (
         <Route path="/calendar" component={Calendar} />
         <Route path="/HostHome" component={HostHome} />
         <Route path="/ComedianHome" component={ComedianHome} />
+        <Route path="/EventForm" component={EventForm} />
+
         <Route component={NoMatch} />
       </Switch>
     </div>

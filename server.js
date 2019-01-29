@@ -23,7 +23,7 @@ if (process.env.NODE_ENV === "production") {
 // Add routes, both API and view
 // app.use(routes);
 
-const testModel = require('./models/tomModel.js')
+const testModel = require('./models/comedian.js')
 app.post('/save', function(req, res){
   console.log('we hit the /save route!!!', req.body)
   testModel.create(req.body).then(function(data){
