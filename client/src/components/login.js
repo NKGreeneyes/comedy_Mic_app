@@ -2,7 +2,7 @@ import React from "react";
 
 const Login = props => (
   // multiple buttons could be added here for differnt auth types
-  <>
+  <div>
     <button
       className="btn btn-default navbar-btn mr-1"
       onClick={() => props.login("Google")}
@@ -15,7 +15,7 @@ const Login = props => (
     >
       Facebook Login
     </button>
-  </>
+    </div>
 );
 
 export default Login;

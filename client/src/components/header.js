@@ -83,7 +83,7 @@ class Header extends React.Component {
           <Link to="/hosthome">Host Home</Link><br></br>
           <Link to='/comedianhome'>Comedian Home</Link>
           
-        <Login></Login>
+        {/* <Login></Login> */}
 
           <h1>{this.props.text}</h1>
           </div>
