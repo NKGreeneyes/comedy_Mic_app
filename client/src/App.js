@@ -8,6 +8,7 @@ import ComedianHome from "./pages/ComedianHome";
 import { slide as Menu } from "react-burger-menu";
 import "./style.css";
 import SideBar from "./Sidebar";
+import EventForm from "./pages/EventForm";
 
 const App = () => (
 
@@ -32,6 +33,8 @@ const App = () => (
         <Route path="/calendar" component={Calendar} />
         <Route path="/HostHome" component={HostHome} />
         <Route path="/ComedianHome" component={ComedianHome} />
+        <Route path="/EventForm" component={EventForm} />
+
         <Route component={NoMatch} />
       </Switch>
     </div>
