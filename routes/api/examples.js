@@ -1,6 +1,6 @@
 const router = require("express").Router();
-const exampleController = require("../../controllers/exampleController");
+const comedianController = require("../../controllers/comedianController");
 
-router.route("/").get(exampleController.findAll);
+router.route("/").get(comedianController.findAll);
 
 module.exports = router;

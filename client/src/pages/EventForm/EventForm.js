@@ -2,10 +2,10 @@ import React, { Component } from "react";
 // import API from "../../utils/API"; //import you API functions here
 import { Col, Row, Container } from "../../components/Grid";
 import Header from "../../components/header.js";
-import CalendarComponent from '../../components/componentCalendar'
 
 
-class ComedianHome extends Component {
+
+class EventForm extends Component {
   state = {
     example: "some state!"
   };
@@ -17,9 +17,9 @@ class ComedianHome extends Component {
           <Col size="md-12">
           <Header text={'if we want it dynamic on comedian home we are set'}></Header>
             <h3>
-              comedian home page
+             event form page
             </h3>
-            <CalendarComponent />
+            
           </Col>
         </Row>
       </Container>
@@ -27,4 +27,4 @@ class ComedianHome extends Component {
   }
 }
 
-export default ComedianHome;
+export default EventForm;

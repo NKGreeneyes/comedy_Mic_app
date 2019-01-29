@@ -24,6 +24,7 @@
     "express": "^4.16.4",
     "if-env": "^1.0.4",
     "mongoose": "^5.4.6",
+    "react-big-calendar": "^0.20.3",
     "react-burger-menu": "^2.6.1"
   },
   "repository": "https://github.com/NKGreeneyes/comedy_Mic_app.git"
