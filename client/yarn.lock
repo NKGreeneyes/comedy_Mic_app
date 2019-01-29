@@ -1670,11 +1670,7 @@ class-utils@^0.3.5:
     isobject "^3.0.0"
     static-extend "^0.1.1"
 
-<<<<<<< HEAD
-classnames@^2.2.6:
-=======
 classnames@^2.2.4, classnames@^2.2.5, classnames@^2.2.6:
->>>>>>> 519cc3aec664420e5eeb9e8292a3361aeb182f70
   version "2.2.6"
   resolved "https://registry.yarnpkg.com/classnames/-/classnames-2.2.6.tgz#43935bffdd291f326dad0a205309b38d00f650ce"
   integrity sha512-JR/iSQOSt+LQIWwrwEzJ9uk0xfN3mTVYMwt1Ir5mUcSN6pU+V4zQFFaJsclJbPuAUQH+yfWef6tm7l1quW3C8Q==
@@ -6437,18 +6433,6 @@ rc@^1.0.1, rc@^1.1.6, rc@^1.2.7:
     minimist "^1.2.0"
     strip-json-comments "~2.0.1"
 
-<<<<<<< HEAD
-react-burger-menu@^2.6.2:
-  version "2.6.2"
-  resolved "https://registry.yarnpkg.com/react-burger-menu/-/react-burger-menu-2.6.2.tgz#205cbb8383482981c0c2d4ebce4f7bf7ca08964a"
-  integrity sha512-wJ5gYX2woSFc9l4AKlvF5KUFQlKyZHzD08fUCOevFcZclAq8zZxWgLDh3ugFJ7RTkwr5Z4clSm89LMtCk++SRw==
-  dependencies:
-    browserify-optional "^1.0.0"
-    classnames "^2.2.6"
-    eve "~0.5.1"
-    prop-types "^15.6.2"
-    snapsvg-cjs "0.0.6"
-=======
 react-big-calendar@^0.20.3:
   version "0.20.3"
   resolved "https://registry.yarnpkg.com/react-big-calendar/-/react-big-calendar-0.20.3.tgz#a895e11fb6b2ac6ad8cec87a261b7e7c24dbaab0"
@@ -6466,7 +6450,17 @@ react-big-calendar@^0.20.3:
     react-overlays "^0.8.3"
     uncontrollable "^6.0.0"
     warning "^4.0.2"
->>>>>>> 519cc3aec664420e5eeb9e8292a3361aeb182f70
+
+react-burger-menu@^2.6.2:
+  version "2.6.2"
+  resolved "https://registry.yarnpkg.com/react-burger-menu/-/react-burger-menu-2.6.2.tgz#205cbb8383482981c0c2d4ebce4f7bf7ca08964a"
+  integrity sha512-wJ5gYX2woSFc9l4AKlvF5KUFQlKyZHzD08fUCOevFcZclAq8zZxWgLDh3ugFJ7RTkwr5Z4clSm89LMtCk++SRw==
+  dependencies:
+    browserify-optional "^1.0.0"
+    classnames "^2.2.6"
+    eve "~0.5.1"
+    prop-types "^15.6.2"
+    snapsvg-cjs "0.0.6"
 
 react-dev-utils@^5.0.2:
   version "5.0.3"
