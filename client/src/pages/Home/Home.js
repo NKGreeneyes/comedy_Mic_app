@@ -40,6 +40,7 @@ class Home extends Component {
             </h3>
 
     <h1> tom test</h1>
+    <h3>(quick reminder from dan that tom test is just a way to take data from the user, it's not the actual email and password fields)</h3>
     
       <p>Email</p>
       <input onChange={this.handleUserName}></input>

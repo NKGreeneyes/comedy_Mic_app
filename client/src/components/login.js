@@ -1,19 +1,21 @@
-import React from 'react';
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import React from "react";
 
-class Login extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-  render() {
-    return (
-      <div>
-
-          <p>this will be a log-in component embedded in the navbar
-          </p>
+const Login = props => (
+  // multiple buttons could be added here for differnt auth types
+  <div>
+    <button
+      className="btn btn-default navbar-btn mr-1"
+      onClick={() => props.login("Google")}
+    >
+      Google Login
+    </button>
+    <button
+      className="btn btn-default navbar-btn"
+      onClick={() => props.login("Facebook")}
+    >
+      Facebook Login
+    </button>
     </div>
-    );
-  }
-}
+);
 
 export default Login;
