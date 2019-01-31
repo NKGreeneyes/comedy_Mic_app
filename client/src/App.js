@@ -9,12 +9,8 @@ import { slide as Menu } from "react-burger-menu";
 import "./style.css";
 import SideBar from "./Sidebar";
 import EventForm from "./pages/EventForm";
-import CssBaseline from '@material-ui/core/CssBaseline';
-<<<<<<< HEAD
-=======
 import LoginPage from "./pages/Login";
 import CssBaseline from '@material-ui/core/CssBaseline';
->>>>>>> bb5499eb581c5487337b1cc961a887b9bf309eb1
 
 const App = () => (
 
@@ -36,10 +32,7 @@ const App = () => (
         <Route path="/HostHome" component={HostHome} />
         <Route path="/ComedianHome" component={ComedianHome} />
         <Route path="/EventForm" component={EventForm} />
-<<<<<<< HEAD
-=======
         <Route path="/LoginPage" component={LoginPage} />
->>>>>>> bb5499eb581c5487337b1cc961a887b9bf309eb1
         <Route component={NoMatch} />
       </Switch>
     </div>
