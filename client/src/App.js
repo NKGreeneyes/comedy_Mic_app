@@ -9,7 +9,6 @@ import { slide as Menu } from "react-burger-menu";
 import "./style.css";
 import SideBar from "./Sidebar";
 import EventForm from "./pages/EventForm";
-import CssBaseline from '@material-ui/core/CssBaseline';
 import LoginPage from "./pages/Login";
 import CssBaseline from '@material-ui/core/CssBaseline';
 
