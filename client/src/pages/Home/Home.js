@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 // import API from "../../utils/API"; //import you API functions here
 import { Col, Row, Container } from "../../components/Grid";
-import Header from "../../components/header.js";
+// import Header from "../../components/header.js";
 import Axios from 'axios'
 
 class Home extends Component {
@@ -31,7 +31,7 @@ class Home extends Component {
       <Container>
         <Row>
           <Col size="md-12">
-          <Header text={'hey gang this header works'}></Header>
+          {/* <Header text={'hey gang this header works'}></Header> */}
 
           <h1>hey this would be the home page</h1>
             <h3>

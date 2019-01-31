@@ -2,6 +2,7 @@ import React from "react";
 import BigCalendar from 'react-big-calendar'
 import moment from 'moment'
 import 'react-big-calendar/lib/css/react-big-calendar.css'
+import { weekdays } from "moment";
 
 
 const localizer = BigCalendar.momentLocalizer(moment) 
@@ -16,14 +17,13 @@ const myEventsList=[
       'reoccurring': true,
 
     },
-
-
     {
       'title': 'The Riff',
       'start':  (new Date(2019, 0, 0)),
       'end':  (new Date(2019, 0, 0)),
       'reoccurring': true,
     },
+
     {
         'title': 'Comedy Overload',
         'start':  (new Date(2019, 0, 0)),
