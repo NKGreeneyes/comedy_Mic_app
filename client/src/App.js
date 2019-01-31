@@ -9,6 +9,7 @@ import { slide as Menu } from "react-burger-menu";
 import "./style.css";
 import SideBar from "./Sidebar";
 import EventForm from "./pages/EventForm";
+import LoginPage from "./pages/Login";
 
 const App = () => (
 
@@ -34,7 +35,7 @@ const App = () => (
         <Route path="/HostHome" component={HostHome} />
         <Route path="/ComedianHome" component={ComedianHome} />
         <Route path="/EventForm" component={EventForm} />
-
+        <Route path="/LoginPage" component={LoginPage} />
         <Route component={NoMatch} />
       </Switch>
     </div>
