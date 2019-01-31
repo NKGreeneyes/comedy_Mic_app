@@ -9,11 +9,14 @@ import { slide as Menu } from "react-burger-menu";
 import "./style.css";
 import SideBar from "./Sidebar";
 import EventForm from "./pages/EventForm";
+import CssBaseline from '@material-ui/core/CssBaseline';
 import LoginPage from "./pages/Login";
+import CssBaseline from '@material-ui/core/CssBaseline';
 
 const App = () => (
 
  <div>
+   <CssBaseline />
     <div id="App">
       <SideBar pageWrapId={"page-wrap"} outerContainerId={"App"} />
 
@@ -22,14 +25,9 @@ const App = () => (
         <h2>Check out our offerings in the sidebar!</h2>
       </div>
     </div>
- 
   <Router>
     <div>
-
-
-
       <Switch>
-
         <Route exact path="/" component={Home} />
         <Route path="/calendar" component={Calendar} />
         <Route path="/HostHome" component={HostHome} />
@@ -40,6 +38,7 @@ const App = () => (
       </Switch>
     </div>
   </Router>
+  <CssBaseline />
   </div>
 );
 
