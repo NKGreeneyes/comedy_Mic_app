@@ -17,7 +17,7 @@ class ComedianHome extends Component {
           <Col size="md-12">
           {/* <Header text={'if we want it dynamic on comedian home we are set'}></Header> */}
             <h3>
-              comedian home page
+              Comedian Homepage
             </h3>
             <CalendarComponent />
           </Col>
