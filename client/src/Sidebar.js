@@ -22,7 +22,7 @@ export default props => {
         Comedy
       </a>
 
-      <a className="account-login" href="/">
+      <a className="account-login" href="/LoginPage">
         Log In / Create Account
       </a>
     </Menu>
