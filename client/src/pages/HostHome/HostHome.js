@@ -18,9 +18,13 @@ class HostHome extends Component {
         <Row>
           <Col size="md-12">
           {/* <Header text={'dynamic header on the HostHome page'}></Header> */}
-            <h1 className="text-center">Host Home</h1>
+            <h3 style={{textAlign:'center', color:'purple'}}>
+              Host Homepage
+            </h3>
             <Link to='/EventForm'>Event Form</Link>
+            <div class='animated slideInUp' style={{border:'5px solid purple', borderRadius:'5px'}}>
             <CalendarComponent />
+            </div>
           </Col>
         </Row>
       </Container>

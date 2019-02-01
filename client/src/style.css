@@ -3,6 +3,10 @@ body {
   margin: 0;
 }
 
+#head12 {
+  font-family: 'Major Mono Display', monospace;
+}
+
 #App {
   font-family: sans-serif;
 

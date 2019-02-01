@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import BigCalendar from 'react-big-calendar'
 import moment from 'moment'
 import 'react-big-calendar/lib/css/react-big-calendar.css'
@@ -13,8 +13,10 @@ const localizer = BigCalendar.momentLocalizer(moment)
 
 const myEventsList=[
 
+
     {
       'title': 'Shaken, Not Stirred',
+      'title': 'All Day Event',
       'allDay': true,
       'start':  (new Date(2019, 0, 0)),
       'end':  (new Date(2019, 0, 0)),
@@ -160,12 +162,17 @@ const myEventsList=[
         'start':  (new Date(2019, 0, 1)),
         'end': (new Date(2019, 0, 1)),
         'reoccurring': true,
+      'start': new Date(2019, 3, 0),
+      'end': new Date(2019, 3, 1)
     },
     {
         'title': 'Sip Sip Hooray',
         'start':  (new Date(2019, 0, 1)),
         'end': (new Date(2019, 0, 1)),
         'reoccurring': true,
+      'title': 'Long Event',
+      'start': new Date(2019, 3, 7),
+      'end': new Date(2019, 3, 10)
     },
     {
         'title': 'Lotties',
@@ -361,6 +368,9 @@ const myEventsList=[
         'start':  (new Date(2019, 0, 1)),
         'end': (new Date(2019, 0, 1)),
         'reoccurring': true,
+      'title': 'DTS STARTS',
+      'start': new Date(2019, 2, 13, 0, 0, 0),
+      'end': new Date(2019, 2, 20, 0, 0, 0)
     },
     {
         'title': 'The Open Mic',
@@ -597,21 +607,7 @@ const myEventsList=[
         'end': (new Date(2019, 0, 6)),
         'reoccurring': true,
     },
-    
 
-
-
-    // {
-    //   'title': 'DTS STARTS',
-    //   'start': new Date(2019, 2, 13, 0, 0, 0),
-    //   'end': new Date(2019, 2, 20, 0, 0, 0)
-    // },
-
-    // {
-    //   'title': 'DTS ENDS',
-    //   'start': new Date(2019, 10, 6, 0, 0, 0),
-    //   'end': new Date(2019, 10, 13, 0, 0, 0)
-    // }
 ]
 const newArray = [...myEventsList]
  myEventsList.forEach (event => {
@@ -619,75 +615,82 @@ const newArray = [...myEventsList]
          let week = 1
          while (week < 53){
 
+
              const start = moment(event.start).add(week, "weeks")
              const end = moment(event.end).add(week, "weeks")
              newArray.push({
                  title: event.title,
                  start, 
                  end,
-    
+
              })
              week++
          }
      }
-     
+
     })
     console.log(newArray);
-    
- 
+
+
 class CalendarComponent extends React.Component {
 
 
 
-//const CalendarComponent = (props) => {
 
+ state = {
+        events: []
+    }
     componentWillMount() {
+        var self = this
         console.log('api', API)
         API.grabEvents(function(data){
             console.log('this is our event!!', data)
+
+            var cleanEvents = []
+
+            for(var i=0; i <data.data.length; i ++) {
+                var newEvent = {
+                    'title': data.data[i].mic,
+                    'start': data.data[i].starttime,
+                    'end': data.data[i].endtime
+                }
+
+                cleanEvents.push(newEvent);
+
+            }
+
+            console.log('clean events!!!', cleanEvents)
+            self.setState({events: cleanEvents});
         })
     }
 
     render() {
+        console.log('this is our state!!', this.state);
         return (
             <div style={{height: '500px'}} >
             <BigCalendar
                 localizer={localizer}
-                events={myEventsList}
+                events={this.state.events}
                 startAccessor="start"
                 endAccessor="end"
             />
             </div>
         )
-    }
-    
 
-    // var date = new Date()
-    // var event = [
-    //     {
-    //         title: 'event 1',
-    //         start: date,
-    //         end: Date,
-    //         allDay: false
-    //     },
-    //     {
-    //         title: 'event 2',
-    //         start: date,
-    //         end: Date,
-    //         allDay: false
-    //     }
-    // ]
-    // return (
-    //     <div style={{height: '500px'}} >
-    //     <BigCalendar
-    //         localizer={localizer}
-    //         events={newArray}
-    //         startAccessor="start"
-    //         endAccessor="end"
-    //     />
-    //     </div>
+
+//     render(){
+//     return (
+//         <div style={{height: '500px'}} >
+//         <BigCalendar
+//             localizer={localizer}
+//             events={newArray}
+//             startAccessor="start"
+//             endAccessor="end"
+//         />
+//         </div>
     // )
 
+    }
 }
 
     export default CalendarComponent;
