@@ -607,6 +607,8 @@ const myEventsList=[
         'reoccurring': true,
     },
 ]
+
+
 const newArray = [...myEventsList]
  myEventsList.forEach (event => {
      if (event.reoccurring) {
