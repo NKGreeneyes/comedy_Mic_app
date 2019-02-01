@@ -20,8 +20,7 @@ const App = () => (
       <SideBar pageWrapId={"page-wrap"} outerContainerId={"App"} />
 
       <div id="page-wrap">
-        <h1>Comedy</h1>
-        <h2>Check out our offerings in the sidebar!</h2>
+        <h1>Chicago Comedy Open Mic</h1>
       </div>
     </div>
   <Router>
