@@ -2,11 +2,13 @@ import React from "react";
 import BigCalendar from 'react-big-calendar'
 import moment from 'moment'
 import 'react-big-calendar/lib/css/react-big-calendar.css'
-<<<<<<< HEAD
+
 import API from '../utils/API.js';
-=======
+
 import { weekdays } from "moment";
->>>>>>> 84d58744407592445e1aaba9a42f0130d36eea6b
+
+import { weekdays } from "moment";
+
 
 
 const localizer = BigCalendar.momentLocalizer(moment) 
@@ -39,6 +41,7 @@ const myEventsList=[
         'start':  (new Date(2019, 0, 0)),
         'end':  (new Date(2019, 0, 0)),
          'reoccurring': true,
+
     },
     {
         'title': 'Schubas',
@@ -227,6 +230,196 @@ const myEventsList=[
          'reoccurring': true,
     },
     {
+
+    },
+    {
+        'title': 'Schubas',
+        'start':  (new Date(2019, 0, 0)),
+         'end':  (new Date(2019, 0, 0)),
+        'reoccurring': true,
+    },
+    {
+        'title': 'Logan Lounge',
+        'start':  (new Date(2019, 0, 0)),
+        'end':  (new Date(2019, 0, 0)),
+        'reoccurring': true,
+    },
+    {
+        'title': 'Five Star Comedy',
+        'start':  (new Date(2019, 0, 0)),
+        'end':  (new Date(2019, 0, 0)),
+        'reoccurring': true,
+    },
+    {
+        'title': 'iO Open Mic',
+        'start':  (new Date(2019, 0, 0)),
+        'end':  (new Date(2019, 0, 0)),
+        'reoccurring': true,
+    },
+    {
+        'title': 'Laughs in Lakeview',
+        'start':  (new Date(2019, 0, 0)),
+        'end':  (new Date(2019, 0, 0)),
+        'reoccurring': true,
+    },
+    {
+        'title': 'Bump City',
+        'start':  (new Date(2019, 0, 0)),
+        'end':  (new Date(2019, 0, 0)),
+        'reoccurring': true,
+    },
+    {
+        'title': 'Navigator Taproom',
+        'start':  (new Date(2019, 0, 0)),
+        'end':  (new Date(2019, 0, 0)),
+        'reoccurring': true,
+    },
+    {
+        'title': 'Elizabeths Crazy Little Thing',
+        'start':  (new Date(2019, 0, 0)),
+        'end':  (new Date(2019, 0, 0)),
+        'reoccurring': true,
+    },
+    {
+        'title': 'Trigger Warning',
+        'start':  (new Date(2019, 0, 0)),
+        'end':  (new Date(2019, 0, 0)),
+        'reoccurring': true,
+    },
+    {
+        'title': 'Dont Quit your Day Job',
+        'start':  (new Date(2019, 0, 0)),
+        'end':  (new Date(2019, 0, 0)),
+        'reoccurring': true,
+    },
+    {
+        'title': 'The Late Night Mic',
+        'start':  (new Date(2019, 0, 0)),
+        'end':  (new Date(2019, 0, 0)),
+        'reoccurring': true,
+    },
+    {
+        'title': 'Early Bird',
+        'start':  (new Date(2019, 0, 1)),
+        'end':  (new Date(2019, 0, 1)),
+        'reoccurring': true,
+    },
+    {
+        'title': 'The Den Theatre Open Mic',
+        'start':  (new Date(2019, 0, 1)),
+         'end': (new Date(2019, 0, 1)),
+         'reoccurring': true,
+    },
+    {
+        'title': 'Toms Tap',
+        'start':  (new Date(2019, 0, 1)),
+        'end': (new Date(2019, 0, 1)),
+        'reoccurring': true,
+    },
+    {
+        'title': 'Def Leprechaun',
+        'start':  (new Date(2019, 0, 1)),
+        'end': (new Date(2019, 0, 1)),
+        'reoccurring': true,
+    },
+    {
+        'title': 'Pressure Open Mic',
+        'start':  (new Date(2019, 0, 1)),
+         'end': (new Date(2019, 0, 1)),
+         'reoccurring': true,
+    },
+    {
+        'title': 'Pint O laughs',
+        'start':  (new Date(2019, 0, 1)),
+        'end': (new Date(2019, 0, 1)),
+        'reoccurring': true,
+    },
+    {
+        'title': 'Tap Queen',
+        'start':  (new Date(2019, 0, 1)),
+        'end': (new Date(2019, 0, 1)),
+        'reoccurring': true,
+    },
+    {
+        'title': 'Patsys',
+        'start':  (new Date(2019, 0, 1)),
+        'end': (new Date(2019, 0, 1)),
+        'reoccurring': true,
+    },
+    {
+        'title': 'Taco Takeover',
+        'start':  (new Date(2019, 0, 1)),
+        'end': (new Date(2019, 0, 1)),
+        'reoccurring': true,
+    },
+    {
+        'title': 'Sip Sip Hooray',
+        'start':  (new Date(2019, 0, 1)),
+        'end': (new Date(2019, 0, 1)),
+        'reoccurring': true,
+    },
+    {
+        'title': 'Lotties',
+        'start':  (new Date(2019, 0, 1)),
+        'end': (new Date(2019, 0, 1)),
+        'reoccurring': true,
+    },
+    {
+        'title': 'The Open Mic',
+        'start':  (new Date(2019, 0, 1)),
+        'end': (new Date(2019, 0, 1)),
+        'reoccurring': true,
+    },
+    {
+        'title': 'Coles',
+        'start':  (new Date(2019, 0, 2)),
+         'end': (new Date(2019, 0, 2)),
+         'reoccurring': true,
+    },
+    {
+        'title': 'Irish Eyes',
+        'start':  (new Date(2019, 0, 2)),
+        'end': (new Date(2019, 0, 2)),
+         'reoccurring': true,
+    },
+    {
+        'title': 'You Joke Like a Girl - All Womens Open Mic',
+        'start':  (new Date(2019, 0, 2)),
+         'end': (new Date(2019, 0, 2)),
+         'reoccurring': true,
+    },
+    {
+        'title': 'Chris Trani Comedy Practice!',
+        'start':  (new Date(2019, 0, 2)),
+         'end': (new Date(2019, 0, 2)),
+         'reoccurring': true,
+    },
+    {
+        'title': 'Marys Comedy Club',
+        'start':  (new Date(2019, 0, 2)),
+         'end': (new Date(2019, 0, 2)),
+         'reoccurring': true,
+    },
+    {
+        'title': 'Cosmic Comedy',
+        'start':  (new Date(2019, 0, 2)),
+         'end': (new Date(2019, 0, 2)),
+         'reoccurring': true,
+    },
+    {
+        'title': 'Am I Right?',
+        'start':  (new Date(2019, 0, 2)),
+         'end': (new Date(2019, 0, 2)),
+         'reoccurring': true,
+    },
+    {
+        'title': 'Swig open night',
+        'start':  (new Date(2019, 0, 2)),
+         'end': (new Date(2019, 0, 2)),
+         'reoccurring': true,
+    },
+    {
+
         'title': 'Easy Breezy',
         'start':  (new Date(2019, 0, 2)),
          'end': (new Date(2019, 0, 2)),
@@ -446,7 +639,7 @@ const newArray = [...myEventsList]
  
 class CalendarComponent extends React.Component {
 
-<<<<<<< HEAD
+
 
 //const CalendarComponent = (props) => {
 
@@ -470,7 +663,7 @@ class CalendarComponent extends React.Component {
         )
     }
     
-=======
+
     // var date = new Date()
     // var event = [
     //     {
@@ -496,7 +689,7 @@ class CalendarComponent extends React.Component {
         />
         </div>
     )
->>>>>>> 84d58744407592445e1aaba9a42f0130d36eea6b
+
 }
 
     export default CalendarComponent;
