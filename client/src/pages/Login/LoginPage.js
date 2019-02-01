@@ -10,7 +10,11 @@ const config = {
 firebase.initializeApp(config);
 
 class LoginPage extends Component {
-  state = { isSignedIn: false }
+  state = { 
+    isSignedIn: false,
+    // theName: firebase.auth().currentUser.displayName
+  }
+
   uiConfig = {
     signInFlow: "popup",
     signInOptions: [
@@ -50,24 +54,63 @@ class LoginPage extends Component {
   //  }(document, 'script', 'facebook-jssdk'));
 
   render() {
+    // if (firebase.auth().currentUser.displayName === "Dan Staggs") {
+    //   console.log("nice");
+    //   } else {
+    //     console.log("bummer");
+    //     }
+
+    // const fauxID = this.firebase.auth().currentUser.displayName;
+    // console.log(fauxID);
+
+    var thingToShow;
+
+    if (this.state.isSignedIn 
+      // &&
+      // firebase.auth().currentUser.displayName
+      // this.state.theName==="What's For Breakfast? Records"
+    ) {
+      thingToShow = (
+        <div>
+          {/* <h1>{firebase.auth().currentUser.displayName}</h1> */}
+          <h3>You have host priveleges</h3>
+        </div>
+      )
+    } else if ('other case!!') { 
+      thingToShow = (
+        <div>
+          <h1>my other stuf!!</h1>
+        </div>
+      )
+    }
+    
+
     return (
       <div className="App">
         {this.state.isSignedIn ? (
           <span>
             <div>Signed In!</div>
             <button onClick={() => firebase.auth().signOut()}>Sign out!</button>
-            <h1>Welcome {firebase.auth().currentUser.displayName}</h1>
-            <img
+            <h3>Welcome {firebase.auth().currentUser.displayName}</h3>
+            <img 
               alt="profile picture"
               src={firebase.auth().currentUser.photoURL}
             />
+            {/* {firebase.auth().currentUser.displayName==="Dan Staggs" ? (
+            <h3>You have host-level access</h3>)} */}
+            
+              
           </span>
-        ) : (
+        ) : ( 
           <StyledFirebaseAuth
             uiConfig={this.uiConfig}
             firebaseAuth={firebase.auth()}
           />
+
+          
         )}
+        {thingToShow}
+        
       </div>
     )
   }
