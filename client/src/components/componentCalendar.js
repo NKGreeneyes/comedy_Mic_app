@@ -2,6 +2,7 @@ import React from "react";
 import BigCalendar from 'react-big-calendar'
 import moment from 'moment'
 import 'react-big-calendar/lib/css/react-big-calendar.css'
+import API from '../utils/API.js';
 
 
 const localizer = BigCalendar.momentLocalizer(moment) 
@@ -33,33 +34,31 @@ const myEventsList=[
     }
 ]
  
-const CalendarComponent = (props) => {
+class CalendarComponent extends React.Component {
 
-    // var date = new Date()
-    // var event = [
-    //     {
-    //         title: 'event 1',
-    //         start: date,
-    //         end: Date,
-    //         allDay: false
-    //     },
-    //     {
-    //         title: 'event 2',
-    //         start: date,
-    //         end: Date,
-    //         allDay: false
-    //     }
-    // ]
-    return (
-        <div style={{height: '500px'}} >
-        <BigCalendar
-            localizer={localizer}
-            events={myEventsList}
-            startAccessor="start"
-            endAccessor="end"
-        />
-        </div>
-    )
+
+//const CalendarComponent = (props) => {
+
+    componentWillMount() {
+        console.log('api', API)
+        API.grabEvents(function(data){
+            console.log('this is our event!!', data)
+        })
+    }
+
+    render() {
+        return (
+            <div style={{height: '500px'}} >
+            <BigCalendar
+                localizer={localizer}
+                events={myEventsList}
+                startAccessor="start"
+                endAccessor="end"
+            />
+            </div>
+        )
+    }
+    
 }
 
     export default CalendarComponent;
