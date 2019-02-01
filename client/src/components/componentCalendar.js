@@ -7,8 +7,6 @@ import API from '../utils/API.js';
 
 import { weekdays } from "moment";
 
-import { weekdays } from "moment";
-
 
 
 const localizer = BigCalendar.momentLocalizer(moment) 
@@ -679,16 +677,16 @@ class CalendarComponent extends React.Component {
     //         allDay: false
     //     }
     // ]
-    return (
-        <div style={{height: '500px'}} >
-        <BigCalendar
-            localizer={localizer}
-            events={newArray}
-            startAccessor="start"
-            endAccessor="end"
-        />
-        </div>
-    )
+    // return (
+    //     <div style={{height: '500px'}} >
+    //     <BigCalendar
+    //         localizer={localizer}
+    //         events={newArray}
+    //         startAccessor="start"
+    //         endAccessor="end"
+    //     />
+    //     </div>
+    // )
 
 }
 

@@ -18,9 +18,7 @@ class HostHome extends Component {
         <Row>
           <Col size="md-12">
           {/* <Header text={'dynamic header on the HostHome page'}></Header> */}
-            <h1>
-              Host Homepage
-            </h1>
+            <h1 className="text-center">Host Home</h1>
             <Link to='/EventForm'>Event Form</Link>
             <CalendarComponent />
           </Col>

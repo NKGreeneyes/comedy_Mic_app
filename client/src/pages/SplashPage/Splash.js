@@ -11,9 +11,10 @@ const Splash = () => (
         <h1 className="text-center" className="text-center">
           upcoming events
         </h1>
-        <div> {CalendarComponent} 
+        <div> 
+            {/* hard code in some events from the sibling components/componentcalendar to this section*/}
         </div>
-        {/* link events */}
+        
       </Col>
     </Row>
   </Container>
