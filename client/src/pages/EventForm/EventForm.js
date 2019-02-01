@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import API from "../../utils/API"; //import you API functions here
 import { Col, Row, Container } from "../../components/Grid";
 import Header from "../../components/header.js";
-import "../../style.css"
+
 
 
 class EventForm extends Component {
@@ -29,12 +29,16 @@ class EventForm extends Component {
  
 
   handleSave = () => {
-    console.log('OUR STATE IS!!', this.state);
-    API.saveEvent(this.state)
+    var thingToSave = this.state
+    thingToSave.starttime = thingToSave.starttime + 'T05:00:00.000Z'
+    thingToSave.endtime = thingToSave.endtime + 'T05:00:00.000Z'
+    
+    console.log('OUR thingToSave!!', thingToSave);
+    
+    API.saveEvent(thingToSave)
   }
 
   render() {
-    let className = 'submit-menu';
     console.log(this.state)
     return (
       <Container>

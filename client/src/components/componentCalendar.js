@@ -36,22 +36,46 @@ const myEventsList=[
  
 class CalendarComponent extends React.Component {
 
+    state = {
+        events: []
+    }
+
+    
+
 
 //const CalendarComponent = (props) => {
 
     componentWillMount() {
+        var self = this
         console.log('api', API)
         API.grabEvents(function(data){
             console.log('this is our event!!', data)
+
+            var cleanEvents = []
+
+            for(var i=0; i <data.data.length; i ++) {
+                var newEvent = {
+                    'title': data.data[i].mic,
+                    'start': data.data[i].starttime,
+                    'end': data.data[i].endtime
+                }
+
+                cleanEvents.push(newEvent);
+
+            }
+
+            console.log('clean events!!!', cleanEvents)
+            self.setState({events: cleanEvents});
         })
     }
 
     render() {
+        console.log('this is our state!!', this.state);
         return (
             <div style={{height: '500px'}} >
             <BigCalendar
                 localizer={localizer}
-                events={myEventsList}
+                events={this.state.events}
                 startAccessor="start"
                 endAccessor="end"
             />
