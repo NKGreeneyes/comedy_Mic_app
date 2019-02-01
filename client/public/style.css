@@ -2,34 +2,28 @@
     display: none;
   }
 
-  .navNarrow {
-
-    i {
+  i.navNarrow {
         float: left;
-    }
+  }
 
-    .narrowLinks {
-        display: none;
-
-        a {
+    a.narrowLinks {
             display: block;
             float: left;
             clear: left;
-        }
     }
-}
-
+    
+    .narrowLinks {
+        display: 'block'
+    }
 @media (min-width: 480px) {
 
-    nav {
-
-        .navWide {
+    nav.navWide {
             display: block;
         }
 
-        .navNarrow {
+        nav.navNarrow {
             display: none;
         }
-    }
+
 }
 

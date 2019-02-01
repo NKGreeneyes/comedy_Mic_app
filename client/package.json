@@ -14,6 +14,8 @@
     "react-dom": "^16.1.1",
     "react-event-calendar": "^0.3.0",
     "react-firebaseui": "^3.1.2",
+    "react-native": "^0.58.3",
+    "react-native-elements": "^1.0.0",
     "react-router-dom": "^4.2.2",
     "react-scripts": "^1.0.17"
   },

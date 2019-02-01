@@ -16,10 +16,12 @@ class ComedianHome extends Component {
         <Row>
           <Col size="md-12">
           {/* <Header text={'if we want it dynamic on comedian home we are set'}></Header> */}
-            <h3>
+            <h3 style={{textAlign:'center', color:'purple'}}>
               Comedian Homepage
             </h3>
+            <div class='animated slideInUp' style={{border:'5px solid purple', borderRadius:'5px'}}>
             <CalendarComponent />
+            </div>
           </Col>
         </Row>
       </Container>

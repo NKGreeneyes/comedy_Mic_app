@@ -14,19 +14,21 @@ import CssBaseline from '@material-ui/core/CssBaseline';
 import CalendarComponent from "./components/componentCalendar";
 // import About from "./pages/About"
 import Splash from "./pages/SplashPage";
+//import StickyHeader from 'react-sticky-header';
+// import {Header} from 'react-native-elements';
 
 
 const App = () => (
 
  <div>
-   <CssBaseline />
     <div id="App">
       <SideBar pageWrapId={"page-wrap"} outerContainerId={"App"} />
 
       <div id="page-wrap">
-        <h1>Comedy</h1>
-        <h2>Check out our offerings in the sidebar!</h2>
+      <h1 class="bg-light p-4" id="head12" style={{color:'purple'}}>Chicago Comedy Open Mic</h1>
+      <hr class='animated slideInLeft'style={{width:'74%', border:'10px solid purple', borderRadius:'5px'}}></hr>
       </div>
+      
     </div>
   <Router>
     <div>
