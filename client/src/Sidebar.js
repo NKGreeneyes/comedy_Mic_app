@@ -21,6 +21,10 @@ export default props => {
       <a className="menu-item" href="/ComedianHome">
         Comedy
       </a>
+
+      <a className="account-login" href="/LoginPage">
+        Log In / Create Account
+      </a>
     </Menu>
   );
 };
