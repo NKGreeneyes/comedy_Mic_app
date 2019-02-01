@@ -9,48 +9,71 @@ import { weekdays } from "moment";
 
 
 
-const localizer = BigCalendar.momentLocalizer(moment) 
+ const localizer = BigCalendar.momentLocalizer(moment) 
+  
+ createList = () => {
+  let list = []
 
-const events = [
-  {
-    'title': 'Shaken, Not Stirred',
-    'title': 'All Day Event',
-    'allDay': true,
-    'start':  (new Date(2019, 1, 1)),
-    'end':  (new Date(2019, 1, 2)),
-    'reoccurring': true,
-
-  },
-  {
-    'title': 'The Riff',
-    'start':  (new Date(2019, 1, 11)),
-    'end':  (new Date(2019, 1, 12)),
-    'reoccurring': true,
-  },
-
-  {
-      'title': 'Comedy Overload',
-      'start':  (new Date(2019, 1, 15)),
-       'end':  (new Date(2019, 1, 16)),
-       'reoccurring': true,
-   },
-   {
-      'title': 'Smart Mouth',
-      'start':  (new Date(2019, 1, 20)),
-      'end':  (new Date(2019, 1, 21)),
-       'reoccurring': true,
-
+  for (let i = 0; i < 3; i++) {
+    let events = []
+    for (let j = 0; j < 5; j++) {
+      events.push(<td>{`Column ${j + 1}`}</td>)
+    }
+    list.push(<tr>{events}</tr>)
   }
-]
-const Splash = () => (
-<div style={{height: '500px'}} >
-        <BigCalendar
-            localizer={localizer}
-            events={events}
-            startAccessor="start"
-            endAccessor="end"
-        />
-        </div>
-);
+  return list
+}
+
+
+render() {
+  return(
+    <table>
+      {this.createList()}
+    </table>
+  )
+}
+
+
+// const events = [
+//   {
+//     'title': 'Shaken, Not Stirred',
+//     'title': 'All Day Event',
+//     'allDay': true,
+//     'start':  (new Date(2019, 1, 1)),
+//     'end':  (new Date(2019, 1, 2)),
+//     'reoccurring': true,
+
+//   },
+//   {
+//     'title': 'The Riff',
+//     'start':  (new Date(2019, 1, 11)),
+//     'end':  (new Date(2019, 1, 12)),
+//     'reoccurring': true,
+//   },
+
+//   {
+//       'title': 'Comedy Overload',
+//       'start':  (new Date(2019, 1, 15)),
+//        'end':  (new Date(2019, 1, 16)),
+//        'reoccurring': true,
+//    },
+//    {
+//       'title': 'Smart Mouth',
+//       'start':  (new Date(2019, 1, 20)),
+//       'end':  (new Date(2019, 1, 21)),
+//        'reoccurring': true,
+
+//   }
+// ]
+// const Splash = () => (
+// <div style={{height: '500px'}} >
+//         <BigCalendar
+//             localizer={localizer}
+//             events={events}
+//             startAccessor="start"
+//             endAccessor="end"
+//         />
+//         </div>
+// );
 
 export default Splash;
