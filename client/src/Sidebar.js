@@ -7,23 +7,23 @@ export default props => {
     // Pass on our props
     <Menu {...props} isOpen={ true }>
       <a className="menu-item" href="/">
-        Home - NEW
+        Home
       </a>
 
-      <a className="menu-item" href="/calendar">
+      {/* <a className="menu-item" href="/calendar">
         Calendar
-      </a>
+      </a> */}
 
       <a className="menu-item" href="/HostHome">
         Host Home
       </a>
 
       <a className="menu-item" href="/ComedianHome">
-        Comedy
+        Comedian Home
       </a>
 
       <a className="account-login" href="/LoginPage">
-        Log In / Create Account
+        Account Management
       </a>
     </Menu>
   );

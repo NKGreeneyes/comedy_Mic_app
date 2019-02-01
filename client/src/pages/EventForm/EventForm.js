@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import API from "../../utils/API"; //import you API functions here
 import { Col, Row, Container } from "../../components/Grid";
 import Header from "../../components/header.js";
-
+import "../../style.css"
 
 
 class EventForm extends Component {
@@ -34,6 +34,7 @@ class EventForm extends Component {
   }
 
   render() {
+    let className = 'submit-menu';
     console.log(this.state)
     return (
       <Container>
